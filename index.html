@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crane Institute Online Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #033661;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+        .sidebar {
+            background: #333;
+            color: white;
+            width: 200px;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            background: #444;
+            border-radius: 5px;
+        }
+        main {
+            margin-left: 220px;
+            padding: 20px;
+            flex: 1;
+        }
+        .section {
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .courses-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .course-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #022746;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 200px);
+            margin-left: 240px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #03365f;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="#crofile">Profile</a>
+        <a href="#courses">Courses</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <div>
+        <header>
+            <h1>Welcome to the Student Portal</h1>
+            <p>Your online training platform</p>
+        </header>
+        <main>
+            <section id="dashboard" class="section">
+                <h2>Dashboard</h2>
+                <p>Track your progress, view your schedule, and manage your profile here.</p>
+            </section>
+            <section id="courses" class="section">
+                <h2>Your Courses</h2>
+                <div class="courses-container">
+                    <div class="course-box">
+                        <h3>Mobile Crane Inspector</h3>
+                        <p>Self paced crane inspection course.</p>
+                    </div>
+                    <div class="course-box">
+                        <h3>Forklift Operator</h3>
+                        <p>Learn how to operate a forklift.</p>
+                    </div>
+                    <div class="course-box">
+                        <h3>Managing Crane Safety</h3>
+                        <p>Don't be a retard.</p>
+                    </div>
+                    <div class="course-box">
+                        <h3>DOGE</h3>
+                        <p>$</p>
+                    </div>
+                </div>
+            </section>
+            <section id="announcements" class="section">
+                <h2>Announcements</h2>
+                <p>No new announcements at the moment.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Crane Institute Portal. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
